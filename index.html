@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Քար, Թուղթ, Մկրատ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Քար, Թուղթ, Մկրատ</h1>
+        
+        <div class="scoreboard">
+            <div class="score">
+                <h2>Դուք</h2>
+                <p class="score-value" id="player-score">0</p>
+            </div>
+            <div class="score">
+                <h2>Համակարգիչ</h2>
+                <p class="score-value" id="computer-score">0</p>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="choices">
+                <div class="choice" id="player-choice">
+                    <h3>Ձեր Ընտրությունը</h3>
+                    <div class="choice-icon" id="player-icon">?</div>
+                </div>
+                <div class="vs">VS</div>
+                <div class="choice" id="computer-choice">
+                    <h3>Համակարգչի Ընտրությունը</h3>
+                    <div class="choice-icon" id="computer-icon">?</div>
+                </div>
+            </div>
+
+            <div class="result" id="result">
+                <p>Ընտրեք ձեր զենքը!</p>
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="rock" data-choice="rock">
+                    <span class="emoji">🪨</span>
+                    <span>Քար</span>
+                </button>
+                <button class="btn" id="paper" data-choice="paper">
+                    <span class="emoji">📄</span>
+                    <span>Թուղթ</span>
+                </button>
+                <button class="btn" id="scissors" data-choice="scissors">
+                    <span class="emoji">✂️</span>
+                    <span>Մկրատ</span>
+                </button>
+            </div>
+        </div>
+
+        <button class="reset-btn" id="reset">Վերակայել Միավորները</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
